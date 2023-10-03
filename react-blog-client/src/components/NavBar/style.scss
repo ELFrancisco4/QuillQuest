@@ -1,0 +1,46 @@
+nav {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+
+  .search {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--theme-grey);
+    padding: 0.2em;
+    input {
+      border-bottom: none;
+    }
+  }
+
+  div {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+
+    svg {
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+    span {
+      display: inherit;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+    .profile_menu {
+      width: 15px;
+      height: 15px;
+    }
+  }
+  .blog_logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+}

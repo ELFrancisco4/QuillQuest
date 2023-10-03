@@ -1,0 +1,27 @@
+.home {
+  border: solid 2px green;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feed_section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border: solid 3px fuchsia;
+  padding: 1em;
+}
+
+.side_panel_section {
+  border: solid 2px red;
+  width: 30%;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  .side_panel {
+    border: solid 2px blue;
+    height: 100%;
+    width: 100%;
+  }
+}
