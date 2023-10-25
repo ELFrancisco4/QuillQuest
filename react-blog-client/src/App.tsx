@@ -1,37 +1,19 @@
 import "./App.scss";
-import Home from "./components/Home/Home";
-import ErrorPage from "./pages/ErrorPage";
-import LandingPage from "./pages/LandingPage";
-import LoginPage from "./pages/LoginPage";
-import SignUp from "./pages/SignUp";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import SignUp from "./Pages/Signup";
+import Login from "./Pages/Login";
+import BlogLandingPage from "./Pages/LandingPage";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <LandingPage />,
-  },
-  {
-    path: "/login",
-    element: <LoginPage />,
-  },
-  {
-    path: "/create-user",
-    element: <SignUp />,
-  },
-  {
-    path: "/home",
-    element: <Home />,
-  },
-  {
-    path: "*",
-    element: <ErrorPage />,
-  },
-]);
 const App = () => {
   return (
     <div>
-      <RouterProvider router={router} />
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/register" element={<SignUp />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<BlogLandingPage />} />
+      </Routes>
     </div>
   );
 };

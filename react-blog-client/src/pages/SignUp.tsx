@@ -1,27 +1,15 @@
-import SignUpForm from "../components/SignUp/SignUpForm";
-import img from "../assets/abstract.jpg";
-import "../styles/signUpPage.scss";
-import { useNavigate } from "react-router-dom";
+import React from "react";
 
-const SignUp = () => {
-  const navigate = useNavigate();
+const SignUp: React.FC = () => {
   return (
-    <div className="signUp">
-      <section className="img_container">
-        <img src={img} alt={img} />
-      </section>
-
-      <section className="signUp_form_container">
-        <h1>Create an Account</h1>
-        <p>Create an account to get the best reading and writing experience</p>
-        <SignUpForm />
-        <span>
-          Already signed in?{" "}
-          <a href="/login" onClick={() => navigate("/login")}>
-            Click here to login
-          </a>
-        </span>
-      </section>
+    <div className="auth-page">
+      <form className="auth-form">
+        <h2>Sign Up</h2>
+        <input type="text" placeholder="Author Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Sign Up</button>
+      </form>
     </div>
   );
 };

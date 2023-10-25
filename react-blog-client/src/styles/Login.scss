@@ -1,0 +1,58 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 70%;
+    height: 50%;
+    display: flex;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.left-section, .right-section {
+    padding: 40px;
+}
+
+.left-section {
+    width: 50%;
+    border-right: 1px solid #e0e0e0;
+}
+
+.right-section {
+    width: 50%;
+    background-image: linear-gradient(#67aaff, #ffffff);
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-login {
+    background-color: #67aaff;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.btn-signup {
+    background-color: #e0e0e0;
+    margin-left: 10px;
+}

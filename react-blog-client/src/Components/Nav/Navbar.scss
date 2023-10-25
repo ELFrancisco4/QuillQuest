@@ -1,0 +1,99 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--background-color);
+    border-bottom: 1px solid #ddd;
+
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+
+        a {
+            font-size: var(--font-size-h4);
+            font-weight: bold;
+            color: var(--text-color);
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 200px;
+            outline: none;
+
+            &:focus {
+                border-color: var(--primary-color);
+            }
+        }
+    }
+
+    .navbar-menu {
+        display: flex;
+        align-items: center;
+
+        div {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+
+            a {
+                color: var(--text-color);
+                text-decoration: none;
+                margin-right: 10px;
+                font-size: var(--font-size-base);
+            }
+
+            svg {
+                fill: var(--text-color);
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        svg {
+            fill: var(--text-color);
+            width: 24px;
+            height: 24px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+
+        .navbar-brand,
+        .navbar-menu {
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .navbar-brand input {
+            width: 80%;
+            margin-top: 10px;
+        }
+
+        .navbar-menu div,
+        .navbar-menu svg,
+        .navbar-menu img {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+    }
+}

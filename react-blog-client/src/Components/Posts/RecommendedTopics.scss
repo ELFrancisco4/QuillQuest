@@ -1,0 +1,19 @@
+.recommended-topics {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+
+  .topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+
+    .topic {
+      background-color: #e0e0e0;
+      border-radius: 4px;
+      padding: 10px;
+      text-align: center;
+    }
+  }
+}

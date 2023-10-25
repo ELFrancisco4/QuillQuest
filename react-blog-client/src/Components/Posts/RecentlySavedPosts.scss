@@ -1,0 +1,19 @@
+.recently-saved {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}

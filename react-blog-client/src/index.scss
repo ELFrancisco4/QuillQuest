@@ -1,15 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 :root {
-  --primary-color: #EA5501;
-  --secondary-color: #34DDFE;
-  --text-color: #000;
-  --background-color: #fff;
-  --theme-green: #54BC34;
-  --theme-grey: rgb(235,235,235);
-  --line-height: 16px;
-  --text-size: 12px;
-  --header-size: 25px;
-  --theme-red: rgb(194, 9, 9);
+  // Colors
+  // Base Colors
+  --primary-color: #2c3e50; // A deep navy, great for headers and main buttons
+  --secondary-color: #95a5a6; // A muted gray, perfect for secondary elements or less emphasized text
+  --background-color: #f9f9f9; // Light background, it remains the same as it's already neutral
+  --text-color: #000000; 
+
+  // Additional Colors
+  --highlight-color: #3498db; // Retaining your vibrant blue for call-to-action elements or highlights
+  --error-color: #e74c3c; // For error messages or warnings
+  --success-color: #2ecc71; // A fresh green for success messages, retaining your previous secondary color
+  --border-color: #dfe6e9; // For input fields, tables, or other elements that need borders
+  --placeholder-text: #b2bec3; // For placeholder text in input fields
+
+  // Font
+  --font-family: "Roboto", sans-serif;
+
+  // Font sizes
+  --font-size-base: 16px;
+  --font-size-h1: 36px;
+  --font-size-h2: 30px;
+  --font-size-h3: 24px;
+  --font-size-h4: 20px;
+  --font-size-h5: 18px;
+  --font-size-h6: 16px;
 }
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
