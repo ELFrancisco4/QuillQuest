@@ -1,0 +1,88 @@
+/* Styles for the SignUp component */
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.signup-card {
+  background-color: var(--background-color);
+  border-radius: 20px;
+  width: 70%;
+  height: 80%;
+  display: flex;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.auth-form {
+  background-color: var(--background-color);
+  border-radius: 20px;
+  width: 30%; /* Adjusted to make it fit better */
+  display: flex;
+  flex-direction: column; /* for vertical alignment of children */
+  align-items: center; /* for centering items */
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  gap: 15px;
+}
+
+.auth-form h2 {
+  margin-bottom: 20px;
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+.auth-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--highlight-color);
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.right {
+  width: 50%;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.left {
+  width: 50%;
+  border-right: 1px solid var(--background-color);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  padding: 40px;
+}
+
+.or-separator{
+    display: flex;
+    align-self: center;
+}
+.google-signup {
+  background-color: #ffffff;
+  height: 100px;
+  padding: .8em;
+  width: 50%;
+  border-radius: 10px;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}

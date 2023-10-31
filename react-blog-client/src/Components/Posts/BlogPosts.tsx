@@ -1,22 +1,23 @@
-import React from 'react';
-import './BlogPosts.scss'
-const BlogPosts: React.FC = () => {
-    const mockPosts = [
-        { title: 'Post 1', content: 'Lorem ipsum dolor sit amet...' },
-        { title: 'Post 2', content: 'Consectetur adipiscing elit...' },
-        // ...other mock posts
-    ];
-
-    return (
-        <div className="blog-posts">
-            {mockPosts.map((post, index) => (
-                <div key={index} className="blog-post">
-                    <h2>{post.title}</h2>
-                    <p>{post.content}</p>
-                </div>
-            ))}
-        </div>
-    );
+import React from "react";
+import "./BlogPostsContainer.scss";
+import MockData from "./../../mock-data";
+import BlogPost from "./BlogPost";
+const BlogPostsContainer: React.FC = () => {
+  const blogposts = MockData.slice(1, 10);
+  return (
+    <div className="blog-posts">
+      {blogposts.map((post, index) => (
+        <BlogPost
+          category={post.category}
+          imageSrc={post.imageSrc}
+          readTime={post.readTime}
+          summary={post.summary}
+          title={post.title}
+          key={index}
+        />
+      ))}
+    </div>
+  );
 };
 
-export default BlogPosts;
+export default BlogPostsContainer;

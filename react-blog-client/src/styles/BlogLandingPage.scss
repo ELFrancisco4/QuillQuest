@@ -57,6 +57,19 @@
     align-items: center;
     background-color: var(--secondary-color);
     color: var(--text-color);
+    h1 {
+      display: flex;
+      align-items: center;
+      gap:  10px;
+      img {
+        max-width: 5%;
+        max-height: 5%;
+        width: 5%;
+        height: 5%;
+        display: inline;
+        border-radius: 50%;
+      }
+    }
     nav {
       ul {
         list-style-type: none;

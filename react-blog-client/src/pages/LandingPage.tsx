@@ -1,24 +1,29 @@
 import "../styles/BlogLandingPage.scss";
 import headlineImg from "../assets/images/headline-img.jpeg";
+import logo from "../assets/images/QuillQuest.jpeg";
+import { Link, useNavigate } from "react-router-dom";
 
 const BlogLandingPage = () => {
+  const navigate = useNavigate();
   return (
     <div className="landing-page">
       <header className="header">
-        <h1>QuillQuest</h1>
+        <h1>
+          <img src={logo} alt={logo} /> QuillQuest
+        </h1>
         <nav>
           <ul>
             <li>
-              <a href="#">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="#">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li className="login-link">
-              <a href="#">Login</a>
+              <Link to="/login">Login</Link>
             </li>
             <li className="signup-link">
-              <a href="#">Signup</a>
+              <Link to="/register">Signup</Link>
             </li>
           </ul>
         </nav>
@@ -32,7 +37,9 @@ const BlogLandingPage = () => {
               Discover stories, thinking, and expertise from writers on any
               topic.
             </p>
-            <button className="btn-start">Start reading</button>
+            <button className="btn-start" onClick={() => navigate("/register")}>
+              Start reading
+            </button>
           </div>
 
           <img src={headlineImg} alt={headlineImg} />
@@ -110,7 +117,7 @@ const BlogLandingPage = () => {
               <span>Azure</span>
               <span>Nestjs</span>
             </div>
-            <a href="#">See more topics</a>
+            <Link to="#">See more topics</Link>
           </div>
         </section>
       </main>

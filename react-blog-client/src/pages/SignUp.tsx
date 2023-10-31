@@ -1,15 +1,32 @@
-import React from "react";
+import "../styles/Signup.scss";
+import quillquest from "../assets/images/QuillQuest.jpeg";
+import { FcGoogle } from "react-icons/fc";
+import { Link } from "react-router-dom";
 
-const SignUp: React.FC = () => {
+const SignUp = () => {
   return (
-    <div className="auth-page">
-      <form className="auth-form">
-        <h2>Sign Up</h2>
-        <input type="text" placeholder="Author Name" required />
-        <input type="email" placeholder="Email" required />
-        <input type="password" placeholder="Password" required />
-        <button type="submit">Sign Up</button>
-      </form>
+    <div className="container">
+      <div className="signup-card">
+        <div className="left">
+          <h2> QuillQuest Sign Up Page</h2>
+          <p> Create a new Account</p>
+          <input type="text" placeholder="Author Name" required />
+          <input type="text" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <button className="btn btn-login">Sign Up</button>
+          <p className="or-separator">OR</p>
+          <span className="google-signup">
+            Sign Up with Google
+            <FcGoogle />
+          </span>
+          <span>
+            Already have an account? Login <Link to="/login">here.</Link>
+          </span>
+        </div>
+        <div className="right">
+          <img src={quillquest} alt={quillquest} />
+        </div>
+      </div>
     </div>
   );
 };

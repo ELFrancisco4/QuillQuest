@@ -9,7 +9,7 @@ const Home: React.FC = () => {
     <div className="homepage">
       <Navbar />
       <header className="homepage-header">
-        <h1>IdeaStream Blog</h1>
+        <h1>QuillQuest</h1>
       </header>
       <main className="homepage-main">
         <div className="content-section">
@@ -22,7 +22,7 @@ const Home: React.FC = () => {
       </main>
 
       <footer className="homepage-footer">
-        <p>&copy; 2023 IdeaStream Blog</p>
+        <p>&copy; 2023 QuillQuest</p>
       </footer>
     </div>
   );
