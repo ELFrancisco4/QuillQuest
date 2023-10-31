@@ -3,18 +3,15 @@
 :root {
   // Colors
   // Base Colors
-  --primary-color: #2c3e50; // A deep navy, great for headers and main buttons
-  --secondary-color: #95a5a6; // A muted gray, perfect for secondary elements or less emphasized text
-  --background-color: #f9f9f9; // Light background, it remains the same as it's already neutral
-  --text-color: #000000; 
-
-  // Additional Colors
-  --highlight-color: #3498db; // Retaining your vibrant blue for call-to-action elements or highlights
-  --error-color: #e74c3c; // For error messages or warnings
-  --success-color: #2ecc71; // A fresh green for success messages, retaining your previous secondary color
-  --border-color: #dfe6e9; // For input fields, tables, or other elements that need borders
-  --placeholder-text: #b2bec3; // For placeholder text in input fields
-
+  --primary-color: #2c3e50;
+  --secondary-color: #7f8c8d;
+  --background-color: #f9f9f9;
+  --text-color: #333333;
+  --highlight-color: #3498db;
+  --error-color: #e74c3c;
+  --success-color: #2ecc71;
+  --border-color: #bdc3c7;
+  --placeholder-text: #c8d6e5;
   // Font
   --font-family: "Roboto", sans-serif;
 

@@ -9,14 +9,21 @@
 
   .footer {
     background-color: var(--secondary-color);
+    text-align: center;
   }
   .headline {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    background-color: var(--secondary-color);
+    justify-content: space-between;
+    background-color: var(--background-color);
     color: var(--text-color);
     padding: 40px;
+    width: 100%;
+
+    img {
+      width: 50%;
+      border-radius: 4px;
+    }
 
     .title {
       font-size: 6rem;
@@ -54,12 +61,24 @@
       ul {
         list-style-type: none;
         padding: 0;
-        display: flex;
         gap: 1rem;
-
+        display: flex;
+        align-items: center;
+        .login-link {
+          background-color: var(--highlight-color);
+          padding: 0.5em;
+          border-radius: 4px;
+        }
+        .signup-link {
+          background-color: var(--primary-color);
+          padding: 0.5em;
+          border-radius: 4px;
+          a {
+            color: var(--background-color);
+          }
+        }
         li {
           a {
-            text-decoration: none;
             color: var(--text-color);
             &:hover {
               text-decoration: underline;
@@ -75,13 +94,53 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
+
+    .content-body-section {
+      display: flex;
+      justify-content: space-between;
+
+      &-articles {
+        width: calc(100% - 480px);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        overflow-y: scroll;
+        height: 100vh;
+      }
+      &-more-articles {
+        background-color: var(--background-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 50%;
+        gap: 20px;
+        padding: 1em;
+        div {
+          display: grid;
+          place-items: center;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-gap: 10px;
+          padding: 10px;
+          span {
+            background-color: var(--secondary-color);
+            border-radius: 4px;
+            padding: 10px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
 
     .article-preview {
       background-color: var(--background-color);
       padding: 1rem;
       margin-bottom: 1rem;
-      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: start;
 
       button {
         background-color: var(--primary-color);
