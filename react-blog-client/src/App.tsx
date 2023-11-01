@@ -1,10 +1,10 @@
 import "./App.scss";
 import { Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home";
-import SignUp from "./Pages/Signup";
-import Login from "./Pages/Login";
-import BlogLandingPage from "./Pages/LandingPage";
-import ProfilePage from "./Pages/ProfilePage";
+import Home from "./pages/Home";
+import SignUp from "./pages/Signup";
+import Login from "./pages/Login";
+import BlogLandingPage from "./pages/LandingPage";
+import ProfilePage from "./pages/ProfilePage";
 import BlogPosts from "./Components/Posts/BlogPosts";
 import About from "./Components/Profile/About";
 import ReadingList from "./Components/Profile/ReadingList";
