@@ -118,7 +118,6 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
-        overflow-y: scroll;
         height: 100vh;
       }
       &-more-articles {
@@ -143,25 +142,6 @@
             cursor: pointer;
           }
         }
-      }
-    }
-
-    .article-preview {
-      background-color: var(--background-color);
-      padding: 1rem;
-      margin-bottom: 1rem;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      align-items: start;
-
-      button {
-        background-color: var(--primary-color);
-        color: var(--background-color);
-        padding: 0.5rem 1rem;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
       }
     }
   }

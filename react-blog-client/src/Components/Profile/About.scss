@@ -1,0 +1,12 @@
+.about-container{
+    height: 100vh;
+    padding: 40px;
+
+    &-content{
+        height: 100%;
+        p{
+            text-align: justify;
+            line-height: 40px;
+        }
+    }
+}

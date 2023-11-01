@@ -18,7 +18,7 @@ const BlogPost = ({
   return (
     <div className="blog-post">
       <img className="blog-post-image" src={imageSrc} alt="Blog Thumbnail" />
-      <div>
+      <div className="blog-post-content">
         <h2 className="blog-post-title">{title}</h2>
         <p className="blog-post-summary">{summary}</p>
         <div className="blog-post-meta">

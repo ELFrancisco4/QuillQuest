@@ -7,7 +7,7 @@ import BlogLandingPage from "./Pages/LandingPage";
 import ProfilePage from "./Pages/ProfilePage";
 import BlogPosts from "./Components/Posts/BlogPosts";
 import About from "./Components/Profile/About";
-import Lists from "./Components/Profile/Lists";
+import ReadingList from "./Components/Profile/ReadingList";
 
 const App = () => {
   return (
@@ -18,9 +18,9 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<BlogLandingPage />} />
         <Route path="/home/profile" element={<ProfilePage />}>
-          <Route path="/home/profile/posts" element={<BlogPosts />} index />
+          <Route path="/home/profile/" element={<BlogPosts />}  index />
           <Route path="/home/profile/about" element={<About />} />
-          <Route path="/home/profile/lists" element={<Lists />} />
+          <Route path="/home/profile/lists" element={<ReadingList />} />
         </Route>
       </Routes>
     </div>

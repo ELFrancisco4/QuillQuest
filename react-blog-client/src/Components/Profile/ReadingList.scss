@@ -1,0 +1,70 @@
+.reading-list-container {
+  display: flex;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  width: 90%;
+  max-height: 200px;
+  height: 30%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.reading-list-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+  height: 100%;
+  padding: 20px;
+  width: 30%;
+  div {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    svg {
+      font-size: 24px;
+    }
+  }
+}
+
+.username {
+  color: var(--text-color); /* Adjust color to match your theme */
+}
+
+.reading-list-content {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 100%;
+  gap: 40px;
+}
+
+.reading-list-content p {
+  margin: 0;
+}
+
+.options {
+  color: var(--secondary-color);
+  margin-top: 20%;
+  font-size: var(--font-size-h2);
+  font-weight: bold;
+}
+
+.image-stack {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+
+  .story-image {
+    margin: -10px;
+    width: 40%;
+    height: 100%;
+    border-radius: 4px;
+    border: solid 2px #fff;
+  }
+}

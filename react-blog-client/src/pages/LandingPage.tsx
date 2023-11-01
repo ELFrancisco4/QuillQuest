@@ -2,10 +2,11 @@ import "../styles/BlogLandingPage.scss";
 import headlineImg from "../assets/images/headline-img.jpeg";
 import logo from "../assets/images/QuillQuest.jpeg";
 import { Link, useNavigate } from "react-router-dom";
+import BlogPostsContainer from "../Components/Posts/BlogPosts";
 
 const BlogLandingPage = () => {
   const navigate = useNavigate();
-  return (
+  return ( 
     <div className="landing-page">
       <header className="header">
         <h1>
@@ -47,61 +48,7 @@ const BlogLandingPage = () => {
 
         <section className="content-body-section">
           <div className="content-body-section-articles">
-            <article className="article-preview">
-              <h2>Sample Article Title</h2>
-              <p>Intro of the article...</p>
-              <button>Read More</button>
-            </article>
-            <article className="article-preview">
-              <h2>Sample Article Title</h2>
-              <p>Intro of the article...</p>
-              <button>Read More</button>
-            </article>
-            <article className="article-preview">
-              <h2>Sample Article Title</h2>
-              <p>Intro of the article...</p>
-              <button>Read More</button>
-            </article>
-            <article className="article-preview">
-              <h2>Sample Article Title</h2>
-              <p>Intro of the article...</p>
-              <button>Read More</button>
-            </article>
-            <article className="article-preview">
-              <h2>Sample Article Title</h2>
-              <p>Intro of the article...</p>
-              <button>Read More</button>
-            </article>
-            <article className="article-preview">
-              <h2>Sample Article Title</h2>
-              <p>Intro of the article...</p>
-              <button>Read More</button>
-            </article>
-            <article className="article-preview">
-              <h2>Sample Article Title</h2>
-              <p>Intro of the article...</p>
-              <button>Read More</button>
-            </article>
-            <article className="article-preview">
-              <h2>Sample Article Title</h2>
-              <p>Intro of the article...</p>
-              <button>Read More</button>
-            </article>
-            <article className="article-preview">
-              <h2>Sample Article Title</h2>
-              <p>Intro of the article...</p>
-              <button>Read More</button>
-            </article>
-            <article className="article-preview">
-              <h2>Sample Article Title</h2>
-              <p>Intro of the article...</p>
-              <button>Read More</button>
-            </article>
-            <article className="article-preview">
-              <h2>Sample Article Title</h2>
-              <p>Intro of the article...</p>
-              <button>Read More</button>
-            </article>
+            <BlogPostsContainer />
           </div>
 
           <div className="content-body-section-more-articles">
