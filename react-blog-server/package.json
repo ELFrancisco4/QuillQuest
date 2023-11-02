@@ -1,0 +1,25 @@
+{
+  "name": "react-blog-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.1",
+    "nodemon": "^3.0.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.2.0",
+    "mongoose": "^8.0.0"
+  }
+}
