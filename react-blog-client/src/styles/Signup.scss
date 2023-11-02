@@ -24,7 +24,6 @@
   align-items: center; /* for centering items */
   padding: 40px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  gap: 15px;
 }
 
 .auth-form h2 {
@@ -64,7 +63,7 @@
   border-right: 1px solid var(--background-color);
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 5px;
   justify-content: center;
   padding: 40px;
 }
@@ -72,6 +71,7 @@
 .or-separator{
     display: flex;
     align-self: center;
+    padding-top: 5px;
 }
 .google-signup {
   background-color: #ffffff;

@@ -57,8 +57,8 @@ const ProfilePage = () => {
             <div className="photo-section">
               {/* <img src="path_to_image.jpg" alt="Profile" /> */}
               <CgProfile />
-              <button>Update</button>
-              <button>Remove</button>
+              <button className="upload-photo">Update</button>
+              <button className="delete-photo">Remove</button>
               <p>
                 Recommended: Square JPG, PNG, or GIF, at least 1,000 pixels per
                 side.
