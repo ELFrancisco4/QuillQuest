@@ -1,0 +1,57 @@
+.write-new-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+
+  .toolbar {
+    display: flex;
+    align-items: center;
+    background: #fff; // Adjust color as needed
+    width: 100%;
+    max-width: 600px; // Adjust size as needed
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Adjust shadow as needed
+
+    .icon-button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      color: green; // Adjust icon color as needed
+      font-size: 24px; // Adjust icon size as needed
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        background-color: #f5f5f5; // Adjust hover state as needed
+      }
+    }
+
+    .close {
+      margin-right: auto;
+      color: #333; // Adjust close icon color as needed
+    }
+
+    .check {
+      margin-left: auto;
+      color: #333; // Adjust check icon color as needed
+    }
+
+    .title {
+      font-size: 1.5rem; // Adjust title size as needed
+      margin: 0 16px;
+    }
+
+    .icons {
+      display: flex;
+      align-items: center;
+
+      .icon-button:not(:last-child) {
+        margin-right: 8px; // Spacing between icons
+      }
+    }
+  }
+}

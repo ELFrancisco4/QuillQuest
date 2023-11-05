@@ -9,12 +9,14 @@ import About from "./Components/Profile/About";
 import ReadingList from "./Components/Profile/ReadingList";
 import SignUp from "./pages/SignUp";
 import InterestsPage from "./pages/InterestsPage";
+import WriteNewArticle from "./Components/Posts/WriteNewArticle";
 
 const App = () => {
   return (
     <div>
       <Routes>
         <Route path="/home" element={<Home />} />
+        <Route path="/home/write" element={<WriteNewArticle />} />
         <Route path="/interests" element={<InterestsPage />} />
         <Route path="/register" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
