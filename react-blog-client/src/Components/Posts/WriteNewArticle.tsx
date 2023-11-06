@@ -69,7 +69,7 @@ const WriteNewArticle: React.FC = () => {
       <div>
         <input type="text" placeholder="Title" />
 
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <textarea name="name" id="text-area" cols="30" rows="10"></textarea>
       </div>
     </div>
   );
