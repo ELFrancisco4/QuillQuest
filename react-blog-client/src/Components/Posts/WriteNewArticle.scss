@@ -1,9 +1,53 @@
 .write-new-article {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 16px;
+  border: solid 2px green;
+  height: 100vh;
+
+  .article-content{
+    border: solid 2px orange;
+    height: 100%;
+    width: 100%;
+  }
+
+  nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    div{
+      display: flex;
+      gap: 10px;
+    }
+    img{
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+    }
+    span{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    ul{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .publish-article{
+        background-color: #38a169;
+        color: white;
+        font-weight: bold;
+        padding: .5em;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      svg{
+        height: 40px;
+        width: 40px;
+      }
+    }
+  }
 
   .toolbar {
     display: flex;
