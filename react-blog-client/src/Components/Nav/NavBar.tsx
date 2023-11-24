@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
       <div className="navbar-menu">
         {" "}
         <div>
-          <Link to="/create-post">Write</Link>
+          <Link to="/home/write">Write</Link>
           <LiaEdit />
         </div>
         <GrNotification />

@@ -3,99 +3,96 @@
   flex-direction: column;
   align-items: center;
   padding: 16px;
-  border: solid 2px green;
   height: 100vh;
 
-  .article-content{
-    border: solid 2px orange;
+  .article-content {
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &-body {
+      height: 100vh;
+      position: relative;
+      padding-left: 8em;
+      padding-right: 8em;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      textarea {
+        width: 100%;
+        height: 100%;
+        padding: 0.8em;
+        resize: none;
+        outline: none;
+        border: none;
+        font-size: var(--font-size-h3);
+        text-align: justify;
+        line-height: 50px;
+      }
+      input {
+        height: 20vh;
+        width: 100%;
+        font-size: 50px;
+        outline: none;
+        border: none;
+      }
+
+      .icon-button {
+        /* Initially set the toolbar to be invisible */
+        visibility: hidden;
+        /* Position your toolbar accordingly */
+        opacity: 0;
+        position: absolute;
+        left: 75px; /* Adjust based on your layout */
+        top: 47px; /* Adjust based on your layout */
+        transition: visibility 0s, opacity 0.5s linear;
+      }
+    }
   }
 
-  nav{
+  nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    div{
+    div {
       display: flex;
       gap: 10px;
     }
-    img{
+    img {
       border-radius: 50%;
       width: 40px;
       height: 40px;
     }
-    span{
+    span {
       display: flex;
       align-items: center;
       gap: 10px;
     }
-    ul{
+    ul {
       display: flex;
       align-items: center;
       gap: 20px;
-      .publish-article{
+      .publish-article {
         background-color: #38a169;
         color: white;
         font-weight: bold;
-        padding: .5em;
+        padding: 0.5em;
         cursor: pointer;
         border-radius: 4px;
       }
-      svg{
+      svg {
         height: 40px;
         width: 40px;
       }
     }
   }
+}
 
-  .toolbar {
-    display: flex;
-    align-items: center;
-    background: #fff; // Adjust color as needed
-    width: 100%;
-    max-width: 600px; // Adjust size as needed
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Adjust shadow as needed
-
-    .icon-button {
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 8px;
-      color: green; // Adjust icon color as needed
-      font-size: 24px; // Adjust icon size as needed
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      &:hover {
-        background-color: #f5f5f5; // Adjust hover state as needed
-      }
-    }
-
-    .close {
-      margin-right: auto;
-      color: #333; // Adjust close icon color as needed
-    }
-
-    .check {
-      margin-left: auto;
-      color: #333; // Adjust check icon color as needed
-    }
-
-    .title {
-      font-size: 1.5rem; // Adjust title size as needed
-      margin: 0 16px;
-    }
-
-    .icons {
-      display: flex;
-      align-items: center;
-
-      .icon-button:not(:last-child) {
-        margin-right: 8px; // Spacing between icons
-      }
-    }
-  }
+.article-content-body:focus-within .icon-button {
+  /* Make the toolbar visible when the container is focused */
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
 }
