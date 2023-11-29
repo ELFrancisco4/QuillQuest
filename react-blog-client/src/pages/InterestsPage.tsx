@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/InterestsPage.scss";
 import logo from "../assets/images/QuillQuest.jpeg";
+import { useNavigate } from "react-router-dom";
 
 const interestsList = [
   "Programming",
@@ -20,6 +21,7 @@ const interestsList = [
 ];
 
 const InterestsPage: React.FC = () => {
+  const navigate = useNavigate();
   const [selectedInterests, setSelectedInterests] = useState<string[]>([]);
 
   const toggleInterest = (interest: string) => {

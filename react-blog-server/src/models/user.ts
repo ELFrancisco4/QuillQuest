@@ -5,10 +5,12 @@ const UserSchema = new mongoose.Schema(
     authorName: {
       type: String,
       required: [true, "Provide author name"],
+      unique: true,
     },
     password: {
       type: String,
       required: [true, "Must provide a password"],
+      min: 8,
     },
     email: {
       type: String,
